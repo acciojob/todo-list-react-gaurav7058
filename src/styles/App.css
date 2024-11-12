@@ -1,1 +1,9 @@
-
+/* body{
+    margin: 0;
+    padding: 0;
+}
+.add_tasks_section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} */
