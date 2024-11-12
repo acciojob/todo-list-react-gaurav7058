@@ -11,8 +11,8 @@ const App = () => {
       id: id
     };
     setUserStoreData([...userStoreData, newTask]);
-    setId(id + 1); // Increment id after each new task
-    setInputValue(""); // Clear input after adding
+    setId(id + 1); 
+    setInputValue("");
   }
   function handleDelete(id){
     const FilterData=userStoreData.filter(item=>item.id!==id)
@@ -20,10 +20,10 @@ const App = () => {
   }
   return (
     <div>
-        <h1>To Do List</h1>
         <div className="add_tasks_section">
+        <h3>To Do List</h3>
           <textarea name="" id="" value={inputValue} onChange={(e)=>setInputValue(e.target.value)}></textarea> 
-          <button className="task" onClick={handleInput}>Add</button>
+          <button className="task" onClick={handleInput}>Task 1</button>
         </div>
         <div className="tasks_section">
           {
