@@ -42,7 +42,7 @@ const App = () => {
   }
 
   return (
-    <>
+    <div className="container">
       <div className="add_tasks_section">
         <h3>To Do List</h3>
         <textarea
@@ -56,7 +56,7 @@ const App = () => {
       <div className="tasks_section">
         {userStoreData.length > 0 &&
           userStoreData.map((item) => (
-            <div key={item.id} className="task_item">
+            <div key={item.id} className="task">
               {item.id === editId ? (
                 <>
                   <textarea
@@ -90,7 +90,7 @@ const App = () => {
             </div>
           ))}
       </div>
-    </>
+    </div>
   );
 };
 
